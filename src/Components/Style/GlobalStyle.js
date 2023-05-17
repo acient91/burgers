@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
 export const Main = styled.main`
-  flex-grow: 1;
+  display: flex;
 `;
 
 export const GlobalStyle = createGlobalStyle`
@@ -70,6 +70,15 @@ export const GlobalStyle = createGlobalStyle`
     font: inherit;
   }
 
+  input[type='nember'] {
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
@@ -80,7 +89,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     background-color: transparent;
     cursor: pointer;
-    border: none;
+    border: transparent;
     outline: transparent;
   }
 `;

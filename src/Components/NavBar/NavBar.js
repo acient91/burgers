@@ -12,6 +12,10 @@ const Header = styled.section`
   padding: 15px;
   color: #ffffff;
   z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 `;
 
 const Logo = styled.a`
@@ -50,10 +54,6 @@ const User = styled.button`
   font-family: "Roboto", sans-serif;
   color: #ffffff;
 
-  img {
-    transition: all 0.3s;
-  }
-
   span {
     text-transform: uppercase;
     display: block;
@@ -72,6 +72,12 @@ const User = styled.button`
   }
 `;
 
+const UserImg = styled.img`
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s;
+`;
+
 export const NavBar = () => {
   return (
     <Header>
@@ -80,7 +86,7 @@ export const NavBar = () => {
         <H1>Бургерная №1</H1>
       </Logo>
       <User>
-        <img src={userImg} alt="Иконка юзер" />
+        <UserImg src={userImg} alt="Иконка юзер" />
         <span>Войти</span>
       </User>
     </Header>

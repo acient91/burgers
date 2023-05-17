@@ -21,3 +21,13 @@ code {
     url('../src/fonts/DMSans-Bold.woff') format('woff');
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'GothamPro';
+  font-weight: 200;
+  font-style: normal;
+  src: local('GothamPro'),
+    url('../src/fonts/GothamPro.woff2') format('woff2'),
+    url('../src/fonts/GothamPro.woff') format('woff');
+  font-display: swap;
+}
